@@ -1,0 +1,270 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from preview.colorlib.com/theme/fox/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Aug 2021 13:48:12 GMT -->
+
+<head>
+    <title>DIGITAL SCHOOL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600,600i,700,700i%7COpen+Sans:300,400,400i,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+
+     <!-- all stylesheets include start -->
+     
+        <link rel="shortcut icon" href="{% static 'assets/favicon/dg.png' %}">
+        <!-- Bootstrap css -->
+        <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+        <!-- revolution slider css -->
+        <link rel="stylesheet" href="{% static 'assets/css/rev_slider/settings.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/rev_slider/layers.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/rev_slider/navigation.css' %}">
+        <!-- fontawesome css -->
+        <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+        <!-- ET Lineicon CSS -->
+        <link rel="stylesheet" href="{% static 'assets/css/lineicon.css' %}">
+        <!-- Light Box CSS -->
+        <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+        <!-- Flex Slider -->
+        <link rel="stylesheet" href="{% static 'assets/css/flexslider.css' %}">
+        <!-- theme style css -->
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+        <!-- all stylesheets include end -->
+
+        <link rel="stylesheet" href="{% static 'css/A.open-iconic-bootstrap.min.css%2banimate.css%2bowl.carousel.min.css%2bowl.theme.default.min.css%2bmagnific-popup.css%2baos.css%2bionicons.min.css%2bflaticon.css%2bicomoon.css%2bstyle.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/wizard/css/raleway-font.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/wizard/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+        <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+        <link rel="stylesheet" href="{% static 'assets/wizard/css/style.css' %}" />
+
+
+        <script type="text/javascript" src="{% static 'script.js' %}"></script>
+</head>
+
+<body>
+
+    <!-- Start Header & Navigation Section -->
+    <header class="clearfix" id="header">
+        <!-- Static navbar -->
+        <nav class="navbar navbar-expand-lg">
+
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'main'%}" > 
+                	<img src="{%static 'images/digital-school-logo.png' %}" style="
+                    width:110px; height:auto;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="oi oi-menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item drop">
+                            <a href="{% url 'main'%}" class="nav-link active">ACCUEIL</a>
+                        </li>
+                        <li class="nav-item drop">
+                            <a class="nav-link" href="{% url 'partner'%}">ETABLISSEMENTS PARTENAIRES</a>
+                        </li>
+                        <li class="nav-item drop">
+                            <a class="nav-link" href="{% url 'blog'%}">ACTUALITES</a>
+                        </li>
+                        <li class="nav-item drop">
+                            <a class="nav-link" href="{% url 'faq'%}">FAQ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'contact'%}">CONTACT</a>
+                        </li>
+
+
+                    </ul>
+                    <ul class="ml-auto navbar-nav loginbtn" >
+                        <li class="nav-item"><a href="{% url 'signin'%}"><button style="background:#ff7301;"  class="btn btn-danger">LOGIN</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    {%block content%}
+
+    {%endblock%}
+    
+    <!-- Start Footer Section -->
+    <section class="footer-section pad-t80 pad-b50">
+        <div class="container text-center">
+
+            <div class="row">                    
+                <div class="col-md-12 col-sm-12">
+                    <div class="widget footer-widget subscribe-widget">
+                        <h3 class="widget-title2">Nous suivre</h3>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="widget footer-widget text-widget">
+                        
+                        <ul class="social-list">
+                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- End Footer Section -->
+
+    <!-- Start Copyright Section -->
+    <section class="copyright-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>© Copyright 2020. Tous droits reserves</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Copyright Section -->
+<!-- End Copyright Section -->
+
+
+
+
+
+
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+<script src="{%static 'js/jquery.min.js' %}"></script>
+<script src="{%static 'js/jquery-migrate-3.0.1.min.js%2bpopper.min.js%2bbootstrap.min.js.pagespeed.jc.5-SMnWxyDE.js' %}"></script>
+<script>
+    eval(mod_pagespeed_HKeHX4yRbT);
+</script>
+<script>
+    eval(mod_pagespeed__J06IMhHy5);
+</script>
+<script>
+    eval(mod_pagespeed_Ikanqv48n2);
+</script>
+<script src="{%static 'js/jquery.easing.1.3.js%2bjquery.waypoints.min.js%2bjquery.stellar.min.js%2bowl.carousel.min.js.pagespeed.jc.klS8bGtWo2.js' %}"></script>
+<script>
+    eval(mod_pagespeed_e4RS8_Loiw);
+</script>
+<script>
+    eval(mod_pagespeed_B1U8jr_DAr);
+</script>
+<script>
+    eval(mod_pagespeed_XlwDfDHEgT);
+</script>
+<script>
+    eval(mod_pagespeed_7NkWooJf9J);
+</script>
+<script src="{%static 'js/jquery.magnific-popup.min.js%2baos.js%2bjquery.animateNumber.min.js%2bscrollax.min.js%2bgoogle-map.js%2bmain.js.pagespeed.jc.nSxM_GnpQM.js' %}"></script>
+<script>
+    eval(mod_pagespeed_PLeHQUSD2B);
+</script>
+<script>
+    eval(mod_pagespeed_Htmnl1yPcV);
+</script>
+<script>
+    eval(mod_pagespeed_l1SDjQX_y6);
+</script>
+<script>
+    eval(mod_pagespeed_UO7dB4Qkib);
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+<script>
+    eval(mod_pagespeed_NroMMygL6A);
+</script>
+<script>
+    eval(mod_pagespeed_vMEFSLI846);
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="../../../static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"67983c5169392d28","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.7.0","si":10}'>
+</script>
+
+
+<!--JS2-->
+
+
+    
+    
+
+    <!-- all js include start -->
+    <!-- jquery latest version -->
+    <script src="{%static 'assets/js/jquery-3.1.1.min.js' %}"></script>
+    <!-- bootstrap latest version -->
+    <script src="{%static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- revolution slider js files start -->
+    <script src="{%static 'assets/js/rev_slider/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{%static 'assets/js/rev_slider/jquery.themepunch.revolution.min.js' %}"></script>
+    
+    <script src="{%static 'assets/js/rev_slider/extensions/revolution.extension.actions.min.js' %}"></script>
+    <script src="{%static 'assets/js/rev_slider/extensions/revolution.extension.carousel.min.js' %}"></script>
+    <script src="{%static 'assets/js/rev_slider/extensions/revolution.extension.kenburn.min.js' %}"></script>
+    <script src="{%static 'assets/js/rev_slider/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+    <script src="{%static 'assets/js/rev_slider/extensions/revolution.extension.migration.min.js' %}"></script>
+    <script src="{%static 'assets/js/rev_slider/extensions/revolution.extension.navigation.min.js' %}"></script>
+    <script src="{%static 'assets/js/rev_slider/extensions/revolution.extension.parallax.min.js' %}"></script>
+    <script src="{%static 'assets/js/rev_slider/extensions/revolution.extension.slideanims.min.js' %}"></script>
+    <script src="{%static 'assets/js/rev_slider/extensions/revolution.extension.video.min.js' %}"></script>
+    <!-- revolution slider js files end -->
+
+    <!-- Other jQuery library -->
+    <script src="{%static 'assets/js/jquery.appear.js' %}"></script>
+    <script src="{%static 'assets/js/jquery.countTo.js' %}"></script>
+    <script src="{%static 'assets/js/jquery.isotope.min.js' %}"></script>
+    <script src="{%static 'assets/js/lightbox.js' %}"></script>
+    
+    <script src="{%static 'assets/js/jquery.flexslider.js' %}"></script>
+    <script src="{%static 'assets/js/jquery.easypiechart.js' %}"></script>
+    <script src="{%static 'assets/js/jquery.mb.YTPlayer.js' %}"></script>
+    <script src="{%static 'assets/js/map.js' %}"></script>        
+    
+    <script src="{%static 'assets/wizard/js/jquery-3.3.1.min.js' %}" type="31441657b3d2a3e72c6e2cf0-text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js' %}" type="31441657b3d2a3e72c6e2cf0-text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js' %}" type="31441657b3d2a3e72c6e2cf0-text/javascript"></script>
+    <script src="{%static 'assets/wizard/js/jquery.steps.js' %}" type="31441657b3d2a3e72c6e2cf0-text/javascript"></script>
+    <script src="{%static 'assets/wizard/js/main.js' %}" type="31441657b3d2a3e72c6e2cf0-text/javascript"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13' %}" type="31441657b3d2a3e72c6e2cf0-text/javascript"></script>
+    <script type="31441657b3d2a3e72c6e2cf0-text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+    </script>
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="31441657b3d2a3e72c6e2cf0-|49" defer=""></script>
+    <!-- template main js file -->
+    <script src="{%static 'assets/js/main.js' %}"></script>
+    <!-- all js include end -->
+</body>
+
+<!-- Mirrored from preview.colorlib.com/theme/fox/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Aug 2021 13:50:19 GMT -->
+
+</html>

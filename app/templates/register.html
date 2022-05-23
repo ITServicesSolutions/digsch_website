@@ -1,0 +1,279 @@
+{% extends 'main.html'%} {%load static%} {%block content%}
+    <!-- Start Breadcrumb Section -->
+    <section class="breadcrumb-section"
+      style="background-image: url(assets/images/bg/breadcrumb4.jpg);background-size: cover;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-sm-5">
+            <div class="page-title">
+              <h1>INSCRIPTION</h1>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-7">
+            <div class="breadcrumb">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Breadcrumb Section -->
+
+
+    <!-- Start Accordion Section -->
+    <section class="" style="background-color: #fff;">
+      <div class="page-content" >
+    <div class="wizard-v1-content">
+      <div class="wizard-form">
+        <form class="form-register" id="form-register" action="index.html#" method="post">
+          <div id="form-total">
+            <h2>
+              <span class="step-icon"><i class="zmdi zmdi-account"></i></span>
+              <span class="step-number">Etape 1</span>
+              <span class="step-text">Donn&eacute;es Personnelles</span>
+            </h2>
+            <section>
+              <div class="inner">
+                
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="inscription_type">Ecole</label>
+                    <select name="card-type" id="card-type" class="form-control">
+                      
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder">
+                    <label for="inscription_type">Type d'inscription</label>
+                    <select name="card-type" id="card-type" class="form-control">
+                      <option value="Inscription">Inscription</option>
+                      <option value="Réinscription">Réinscription</option>
+                    </select>
+                  </div>
+                  <div class="form-holder">
+                    <label for="date_save">Date d'enregistrement</label>
+                    <input type="date" placeholder="Date d'enregistrement" class="form-control" id="confirm_password" name="date_save" required>
+                  </div>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-holder">
+                    <label for="name">Nom</label>
+                    <input type="text" placeholder="Nom" class="form-control" id="confirm_password" name="confirm_password" required>
+                  </div>
+                  <div class="form-holder">
+                    <label for="surname">Prenom(s)</label>
+                    <input type="text" placeholder="Prenom(s)" class="form-control" id="confirm_password" name="confirm_password" required>
+                  </div>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-holder">
+                    <label for="birthday">Date de naissance</label>
+                    <input type="date" placeholder="birthday" class="form-control" id="confirm_password" name="confirm_password" required>
+                  </div>
+                  <div class="form-holder">
+                    <label for="sex">Sexe</label>
+                    <select name="card-type" id="card-type" class="form-control">
+                      <option value="" disabled selected>Sexe</option>
+                      <option value="Business Credit Cards">Business Credit Cards</option>
+                      <option value="Limited Purpose Cards">Limited Purpose Cards</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-holder">
+                    <label for="name">Lieu de naissance</label>
+                    <input type="text" placeholder="Nom" class="form-control" id="confirm_password" name="confirm_password" required>
+                  </div>
+                  <div class="form-holder">
+                    <label for="surname">Email</label>
+                    <input type="email" placeholder="Prenom(s)" class="form-control" id="confirm_password" name="confirm_password" required>
+                  </div>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-holder">
+                    <label for="birthday">Telephone</label>
+                    <input type="number" placeholder="birthday" class="form-control" id="confirm_password" name="confirm_password" required>
+                  </div>
+                  <div class="form-holder">
+                    <label for="sex">Classe d'enregistrement</label>
+                    <select name="card-type" id="card-type" class="form-control">
+                      <option value="">Classe d'enregistrement</option>
+                    </select>
+                  </div>
+                </div>
+                                
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="username">Adresse</label>
+                    <textarea class="form-control"></textarea>
+                    
+                  </div>
+                </div>
+                
+              </div>
+            </section>
+
+            <h2>
+              <span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
+              <span class="step-number">Etape 2</span>
+              <span class="step-text">Infomations D&eacute;taill&eacute;es</span>
+            </h2>
+            <section>
+              <div class="inner">
+
+                <div class="form-row">
+                  <div class="form-holder">
+                    <label for="sex">Type de notification</label>
+                    <select name="card-type" id="card-type" class="form-control">
+                      <option value="">Type de notification</option>
+                    </select>
+                  </div>
+                  <div class="form-holder">
+                    <label for="sex">Activit&eacute; extra-scolaire</label>
+                    <select name="card-type" id="card-type" class="form-control">
+                      <option value="">Activit&eacute; extra-scolaire</option>
+                    </select>
+                  </div>
+                </div>
+
+
+
+
+                <div class="form-holder">
+                  <div class="well clearfix">
+                    <a class="btn btn-primary pull-right add-record" data-added="0"><i class="glyphicon glyphicon-plus"></i>&nbsp;AJOUTER UNE PERSONNE A CONTACTER</a>
+                  </div>
+                  <table class="table table-bordered" id="tbl_posts">
+                    <thead>
+                      <tr>
+                        <th>Nom</th>
+                        <th>Prenom(s)</th>
+                        <th>Email</th>
+                        <th>Tel</th>
+                        <th>#</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbl_posts_body">
+                      <tr id="rec-1">
+                        <td><input type="text" placeholder="Nom" class="form-control" id="confirm_password" name="confirm_password"></td>
+                        <td><input type="text" placeholder="Prenom(s)" class="form-control" id="confirm_password" name="confirm_password"></td>
+                        <td><input type="email" placeholder="Email" class="form-control" id="confirm_password" name="confirm_password"></td>
+                        <td><input type="tel" placeholder="Tel" class="form-control" id="confirm_password" name="confirm_password"></td>
+                        <td><a class="btn btn-xs delete-record" data-id="1"><i class="glyphicon glyphicon-trash"></i></a></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div> 
+
+
+                <div class="form-row">
+                  <div class="form-holder">
+                    <label for="sex">Groupe sanguin</label>
+                    <select name="card-type" id="card-type" class="form-control">
+                      <option value="">Groupe sanguin</option>
+                    </select>
+                  </div>
+                  <div class="form-holder">
+                    <label for="sex">Maladies fr&eacute;quentes</label>
+                    <select name="card-type" id="card-type" class="form-control">
+                      <option value="">Maladies fr&eacute;quentes</option>
+                    </select>
+                  </div>
+                </div>
+              
+
+            </section>
+
+            <h2>
+              <span class="step-icon"><i class="zmdi zmdi-card"></i></span>
+              <span class="step-number">Etape 3</span>
+              <span class="step-text">Paiement et dossier d'inscription</span>
+            </h2>
+            <section>
+              <div class="inner">
+
+
+                  
+                  <div class="form-row">
+                    <div class="form-holder">
+                      <label for="sex">Type de paiement</label>
+                      <select name="card-type" id="card-type" class="form-control">
+                        <option value="">Type de paiement</option>
+                      </select>
+                    </div>
+                    <div class="form-holder">
+                      <label for="sex">Dispens&eacute; au sport</label>
+                      <select name="card-type" id="card-type" class="form-control">
+                        <option value="y">Oui</option>
+                        <option value="n">Non</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-holder">
+                      <label for="sex">Modalit&eacute; de paiment</label>
+                      <select name="card-type" id="card-type" class="form-control">
+                        <option value="">Modalit&eacute; de paiment</option>
+                      </select>
+                    </div>
+                    <div class="form-holder">
+                      <label for="sex">Bulletin de note de classe pr&eacute;c&eacute;dente</label>
+                      <input type="file" class="form-control" id="confirm_password" name="confirm_password">
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="username">Breve description</label>
+                    <textarea class="form-control"></textarea>
+                    
+                  </div>
+                </div>
+
+              </div>
+            </section>
+            <h2>
+              <span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
+              <span class="step-number">Etape 4</span>
+              <span class="step-text">Informations supplementaires</span>
+            </h2>
+            <section>
+              <div class="inner">
+                
+                <div class="form-row">
+                    <div class="form-holder">
+                      <label for="sex">Demande manuscrite</label>
+                      <input type="file" class="form-control" id="confirm_password" name="confirm_password">
+                    </div>
+                    <div class="form-holder">
+                      <label for="sex">Image d'affichage</label>
+                      <input type="file" class="form-control" id="confirm_password" name="confirm_password">
+                    </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="username">Observation</label>
+                    <textarea class="form-control"></textarea>
+                  </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success " value = "Terminer">Terminer</button>  
+                </div>
+              </div>
+            </section>   
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    </section>
+    <!-- End Tab Section -->
+
+    {%endblock%}
